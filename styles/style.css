@@ -71,8 +71,8 @@ button {
 }
 .search-form {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .content__list {
   height: 290px;
@@ -82,7 +82,8 @@ button {
 
 .content__list-item {
   min-width: 300px;
-  max-width: 360px;
+  max-width: 460px;
+  margin-right: 30px;
   overflow-x: hidden;
 }
 .content__list-item:not(:last-child) {
@@ -90,8 +91,8 @@ button {
 }
 
 .content__details {
-  margin-left: 30px;
   width: 700px;
+  margin-left: 30px;
 }
 .content__video-card {
   display: flex;
@@ -105,11 +106,24 @@ button {
 .content__video-card-description-container {
   display: flex;
   flex-wrap: wrap;
-  min-width: 20px;
-  margin-right: 50px;
+  width: 150px;
+  margin-right: 60px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 .search-form__submit-button {
+  margin-top: 20px;
   height: 20px;
+  padding: 15px 73px;
+}
+.more-button {
 }
 
 input[name="city"] {
@@ -120,6 +134,10 @@ input[name="city"] {
   margin-top: 5px;
 }
 .search-form__label-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 1px;
 }
 .search-form__textfield {
   width: 100%;
@@ -140,14 +158,13 @@ input[name="city"] {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-left: 20px;
-  gap: 40px;
+  gap: 15px;
 }
 .search-form__pseudo-checkbox {
   position: relative;
   display: inline-block;
   top: 4px;
-  right: 4px;
+  right: 5px;
   margin: 0;
   padding: 0;
   width: 20px;
@@ -172,9 +189,10 @@ input[name="city"] {
 }
 .result__video-container {
   display: flex;
+  flex-grow: 1;
   width: 100%;
   position: relative;
-  height: 386px;
+  height: 400px;
   margin-bottom: 16px;
 }
 
