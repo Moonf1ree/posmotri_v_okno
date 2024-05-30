@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +35,147 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+fieldset {
+  border: 0;
+}
+a[href],
+input[type="submit"],
+input[type="image"],
+input[type="text"],
+label[for],
+select,
+button {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: baseline;
+  width: 1110px;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.content__list {
+  height: 290px;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.content__list-item {
+  min-width: 300px;
+  max-width: 360px;
+  overflow-x: hidden;
+}
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content__details {
+  margin-left: 30px;
+  width: 700px;
+}
+.content__video-card {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.content__video-card-thumbnail {
+  height: 100px;
+  width: 200px;
+}
+.content__video-card-description-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 20px;
+  margin-right: 50px;
+}
+.search-form__submit-button {
+  height: 20px;
+}
+
+input[name="city"] {
+  width: 147px;
+}
+.search-form__label {
+  width: fit-content;
+  margin-top: 5px;
+}
+.search-form__textfield {
+  width: fit-content;
+  margin-top: 5px;
+}
+.search-form__checkbox-list {
+  display: flex;
+  margin-left: 20px;
+  gap: 30px;
+}
+.search-form__fieldset {
+  width: 200px;
+}
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.search-form__textfield {
+  width: 225px;
+}
+.result {
+  margin-top: 78px;
+  width: 711px;
+}
+.result__video-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+.content__accent {
+  color: #545050;
+}
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 70.5px;
+}
+.content__card-link {
+  text-decoration: none;
+  color: white;
+}
+.content__video-card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.content__video-card-description {
+  margin-top: 6px;
+  line-height: 16.2px;
 }
