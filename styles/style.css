@@ -69,6 +69,8 @@ button {
   outline-color: transparent;
   outline-width: 0.5px;
   outline-offset: -1px;
+  text-decoration: none;
+  color: white;
 }
 .content__card-link:focus-visible {
   outline-color: white;
@@ -91,16 +93,21 @@ button {
 }
 .content__list {
   height: 290px;
-  width: 500px;
-  margin-top: 56px;
+  width: 430px;
+  margin-top: 42px;
   position: relative;
+  overflow-y: hidden;
+}
+.content__list:hover {
   overflow-y: auto;
+}
+.more-button {
+  padding: 4px 148px;
 }
 
 .content__list-item {
   min-width: 300px;
   max-width: 460px;
-  margin-right: 80px;
   overflow-x: hidden;
 }
 
@@ -110,7 +117,7 @@ button {
 
 .content__details {
   width: 700px;
-  margin-left: 30px;
+  margin-left: 22px;
 }
 .content__video-card {
   display: flex;
@@ -125,7 +132,7 @@ button {
 }
 .content__video-card-description-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 200px;
   height: 100px;
   padding: 2px;
@@ -160,10 +167,6 @@ button:active {
   padding: 15px 73px;
 }
 
-.more-button {
-  padding: 4px 168px;
-}
-
 .search-form__label-text {
   font-weight: 400;
   font-size: 18px;
@@ -171,7 +174,7 @@ button:active {
   width: 230px;
 }
 .search-form__textfield {
-  width: 100%;
+  width: 225px;
   padding: 2.5px 0;
   font-family: inherit;
   font-size: 18px;
@@ -237,9 +240,7 @@ button:active {
   font-size: 18px;
   letter-spacing: 1px;
 }
-.search-form__textfield {
-  width: 225px;
-}
+
 .result {
   margin-top: 88px;
   margin-left: -7px;
@@ -250,8 +251,13 @@ button:active {
   flex-grow: 1;
   width: 100%;
   position: relative;
-  height: 400px;
+  height: 386px;
   margin-bottom: 16px;
+}
+.result__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .content__accent {
@@ -265,17 +271,17 @@ button:active {
   text-transform: uppercase;
   line-height: 70.5px;
 }
-.content__card-link {
-  text-decoration: none;
-  color: white;
-}
+
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: -40px;
+  margin-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .content__video-card-description {
   line-height: 16.2px;
